@@ -8,9 +8,9 @@ In step 1, <span style="color: blue;">**Methyl 5-(2-bromoacetyl)-2-hydroxybenzoa
 ### Step 1:
 ![step1](http://img.lingxi.site/step1.png)
 
-**Reaction Smiles**: `COC(=O)C1=CC(=CC=C1O)C(=O)CBr.CC(C)(C)N>>COC(=O)C1=C(O)C=CC(=C1)C(=O)CNC(C)(C)C |c:6,8,23,26,28,t:4,lp:1:2,3:2,10:2,12:2,14:3,19:1,21:2,23:2,26:2,32:2,34:1|`
+**Stage #1**: Add  <span style="color: blue;">*Methyl 5-(2-bromoacetyl)-2-hydroxybenzoate*</span>  to <span style="color: blue;">*Isopropyl alcohol*</span>, protect with <span style="color: blue;">*nitrogen*</span>, cool and add <span style="color: blue;">tert-butylamine</span> dropwise. 
 
-Add  <span style="color: blue;">*Methyl 5-(2-bromoacetyl)-2-hydroxybenzoate*</span>  to <span style="color: blue;">*Isopropyl alcohol*</span>, protect with <span style="color: blue;">*nitrogen*</span>, cool and add <span style="color: blue;">tert-butylamine dropwise. 
+**Reaction Smiles**: `COC(=O)C1=CC(=CC=C1O)C(=O)CBr.CC(C)(C)N>>COC(=O)C1=C(O)C=CC(=C1)C(=O)CNC(C)(C)C |c:6,8,23,26,28,t:4,lp:1:2,3:2,10:2,12:2,14:3,19:1,21:2,23:2,26:2,32:2,34:1|`
 
 ### Step 2:
 ![step2](http://img.lingxi.site/step2.png)
@@ -20,11 +20,13 @@ Add  <span style="color: blue;">*Methyl 5-(2-bromoacetyl)-2-hydroxybenzoate*</sp
 
 **Reaction Smiles**: `[CH3:18][O:19][C:12](=[O:13])[C:11]1=[C:14]([OH:15])[CH:16]=[CH:17][C:9](=[CH:10]1)[C:7](=[O:8])[CH2:6][NH:5][C:2]([CH3:1])([CH3:4])[CH3:3]>>[CH3:1][C:2]([CH3:3])([CH3:4])[NH:5][CH2:6][CH:7]([OH:8])[C:9]1=[CH:10][C:11]([CH2:12][OH:13])=[C:14]([OH:15])[CH:16]=[CH:17]1 |c:4,7,9,34,t:27,31,lp:1:2,3:2,6:2,12:2,14:1,23:1,26:2,31:2,33:2|`
 
-Add 40.00g of intermediate 2 to 240ml of tetrahydrofuran, cool to -10-0, slowly add 11.44g of lithium aluminum hydride, control the temperature at -10-0 during the addition, and control the temperature at -10-5 for 2h after the addition. Add 34.32g of purified water and 11.44g of 15% sodium hydroxide solution to the reaction solution, respectively, control the internal temperature at 0-10 during the addition, and heat the reaction solution to 20-30 and stir for 1h after the addition. Then add anhydrous sodium sulfate, filter, wash the filter cake with tetrahydrofuran twice, and concentrate the filtrate to dryness to obtain crude salbutamol. Add 120ml of isopropanol and 120ml of ethyl acetate to the crude product, heat the reaction solution to reflux under stirring, stir for 0.5h, cool to 0-5, and keep warm for 3h to crystallize. Filter and dry to obtain salbutamol.
-
 ## 2 Python programming and reaction modeling
 
+*The complete code has been uploaded to GitHub:* [cx-luo/rxn-yield-prediction](https://github.com/cx-luo/rxn-yield-prediction)
+
 ### 2.1 Data Processing and Plot Scatter
+
+A large amount of data was read from the CSV file, cleaned, standardized, and the data structure for analysis was constructed. Finally, the scatter plot between the reaction temperature and the product yield was plotted.
 
 ```python
 import pandas as pd
