@@ -14,9 +14,9 @@ In step 1, <span style="color: blue;">**Methyl 5-(2-bromoacetyl)-2-hydroxybenzoa
 
 ### Step 2:
 ![step2](http://img.lingxi.site/step2.png)
-**Stage #1**: <span style="color: blue;">*4-[2-(tert-butylamino)-1-hydroxyethyl]-2-(hydroxymethyl)phenol*</span> (C14H19NO4) With <span style="color: blue;">Lithium Aluminium Hydride</span> In <span style="color: blue;">Tetrahydrofuran</span> at -10 - 5℃; for 2h;
+**Stage #1**: <span style="color: blue;">*4-[2-(tert-butylamino)-1-hydroxyethyl]-2-(hydroxymethyl)phenol*</span> (C14H19NO4) With <span style="color: blue;">Lithium Aluminium Hydride</span> In <span style="color: blue;">Tetrahydrofuran</span> at -10 - 5℃;
 
-**Stage #2:** With <span style="color: blue;">*Sodium hydroxide* </span> In water at 0 - 30℃; for 1h;
+**Stage #2:** With <span style="color: blue;">*Sodium hydroxide* </span> In water at 0 - 30℃;
 
 **Reaction Smiles**: `[CH3:18][O:19][C:12](=[O:13])[C:11]1=[C:14]([OH:15])[CH:16]=[CH:17][C:9](=[CH:10]1)[C:7](=[O:8])[CH2:6][NH:5][C:2]([CH3:1])([CH3:4])[CH3:3]>>[CH3:1][C:2]([CH3:3])([CH3:4])[NH:5][CH2:6][CH:7]([OH:8])[C:9]1=[CH:10][C:11]([CH2:12][OH:13])=[C:14]([OH:15])[CH:16]=[CH:17]1 |c:4,7,9,34,t:27,31,lp:1:2,3:2,6:2,12:2,14:1,23:1,26:2,31:2,33:2|`
 
@@ -261,4 +261,4 @@ def evaluate(self, X_test, y_test):
 
 ------
 
-**The complete code has been uploaded to GitHub**
+To validate my model, I am actively acquiring real-world datasets. I also intend to compare its performance against established machine learning methods (such as random forest and Bayesian optimization), to provide a comprehensive evaluation of its predictive capabilities.
