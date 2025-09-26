@@ -1,0 +1,17 @@
+name: helsinki-pre-assignment
+channels:
+  - conda-forge
+  - rdkit
+  - tmap
+  - defaults
+dependencies:
+  - python=3.8
+  - pandas>=2.0
+  - matplotlib
+  - ipykernel
+  - rdkit
+  - tmap
+  - numpy=1.21
+  - pip
+  - pip:
+    - rxnfp
